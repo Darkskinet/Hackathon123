@@ -164,12 +164,12 @@ serialInst = serial.Serial()
 
 serialInst.baudrate = 9600
 serialInst.port = 'COM4'
-# serialInst.open()
+serialInst.open()
 usr = 1
 users = ['Shree', 'Haazim']
 
 # CHANGE THIS TO TRUE IF YOU WANT TO USE THE RFID TAGS
-while False:
+while True:
     if serialInst.in_waiting:
         pp = serialInst.readline()
         # print(pp.decode('utf'))
