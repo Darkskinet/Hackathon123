@@ -84,12 +84,73 @@ def gestures():
             else:
                 Shree.append(0)
 
-            nfv = 0
-            for nf in range(0, 5):
-                nfv = nfv + Shree[nf]
-            print(nfv)
+            # nfv = 0
+            # for nf in range(0, 5):
+            #     nfv = nfv + Shree[nf]
+            # print(nfv)
 
-            if nfv == 0:
+            # if nfv == 0:
+            #     time.sleep(0.7)
+            #     t = t + 1
+            #     if t == 5:
+            #         t = 0
+            #         print('no fingers are closed')
+            #         sio.emit("gesture", 0)
+            #         emit_gesture(0)
+            #         # Send data to frontend that no five fingers are closed
+            # if nfv == 1:
+            #     time.sleep(0.7)
+            #     t = t + 1
+            #     if t == 5:
+            #         t = 0
+            #         sio.emit("gesture", 1)
+            #         print('one finger is closed')
+            #         emit_gesture(1)
+            #         webbrowser.open(
+            #             "http://localhost:5000/static/main/timetable.pdf")
+            #         # Send data to frontend that one finger is closed
+            # if nfv == 2:
+            #     time.sleep(0.7)
+            #     t = t + 1
+            #     if t == 5:
+            #         t = 0
+            #         print(sio)
+            #         sio.emit("gesture", 2)
+            #         print('two finger are closed')
+            #         emit_gesture(2)
+            #         webbrowser.open("https://cbseacademic.nic.in/")
+            #         # Send data to frontend that two finger are closed
+            # if nfv == 3:
+            #     time.sleep(0.7)
+            #     t = t + 1
+            #     if t == 5:
+            #         t = 0
+            #         sio.emit("gesture", 3)
+            #         print('3 fingers are closed')
+            #         emit_gesture(3)
+            #         webbrowser.open("https://ict.dunesinternationalschool.com")
+            #         # Send data to frontend that 3 fingers are closed
+            # if nfv == 4:
+            #     time.sleep(0.7)
+            #     t = t + 1
+            #     if t == 5:
+            #         t = 0
+            #         sio.emit("gesture", 4)
+            #         print('4 fingers are closed')
+            #         emit_gesture(4)
+            #         webbrowser.open("https://ncert.nic.in/textbook.php")
+            #         # Send data to frontend that 4 fingers are closed
+            # if nfv == 5:
+            #     time.sleep(0.7)
+            #     t = t + 1
+            #     if t == 5:
+            #         t = 0
+            #         sio.emit("gesture", 5)
+            #         print('5 fingers are closed')
+            #         emit_gesture(5)
+            #         # Send data to frontend that 5 fingers are closed
+ 
+            if Shree == [1, 1, 1, 1, 1]:
                 time.sleep(0.7)
                 t = t + 1
                 if t == 5:
@@ -98,7 +159,7 @@ def gestures():
                     sio.emit("gesture", 0)
                     emit_gesture(0)
                     # Send data to frontend that no five fingers are closed
-            if nfv == 1:
+            if Shree == [0, 1, 1, 1, 1]:
                 time.sleep(0.7)
                 t = t + 1
                 if t == 5:
@@ -106,10 +167,9 @@ def gestures():
                     sio.emit("gesture", 1)
                     print('one finger is closed')
                     emit_gesture(1)
-                    webbrowser.open(
-                        "http://localhost:5000/static/main/timetable.pdf")
+                    webbrowser.open("https://web.whatsapp.com/")
                     # Send data to frontend that one finger is closed
-            if nfv == 2:
+            if Shree == [0, 0, 1, 1, 1]:
                 time.sleep(0.7)
                 t = t + 1
                 if t == 5:
@@ -120,7 +180,7 @@ def gestures():
                     emit_gesture(2)
                     webbrowser.open("https://cbseacademic.nic.in/")
                     # Send data to frontend that two finger are closed
-            if nfv == 3:
+            if Shree == [0, 0, 0, 1, 1]:
                 time.sleep(0.7)
                 t = t + 1
                 if t == 5:
@@ -130,7 +190,7 @@ def gestures():
                     emit_gesture(3)
                     webbrowser.open("https://ict.dunesinternationalschool.com")
                     # Send data to frontend that 3 fingers are closed
-            if nfv == 4:
+            if Shree == [0, 0, 0, 0, 1]:
                 time.sleep(0.7)
                 t = t + 1
                 if t == 5:
@@ -140,7 +200,7 @@ def gestures():
                     emit_gesture(4)
                     webbrowser.open("https://ncert.nic.in/textbook.php")
                     # Send data to frontend that 4 fingers are closed
-            if nfv == 5:
+            if Shree == [0, 0, 0, 0, 0]:
                 time.sleep(0.7)
                 t = t + 1
                 if t == 5:
