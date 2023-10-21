@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 20px;
+    /* font-family: 'Lexend', sans-serif; */
+    /* font-family: 'Lexend Giga', sans-serif; */
+}
+
+:root {
+    --main-color: #151515;
+    --accent-color: #7000FF;
+    --sub-accent: #C9FF36;
+}
+
+
+
+/*!NAVBAR STYLES ==========================================================================  */
+/*!NAVBAR STYLES ==========================================================================  */
+/*!NAVBAR STYLES ==========================================================================  */
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6em;
+
+    color: var(--main-color);
+
+}
+
+nav ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 20.5em;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+h1 b {
+    font-size: 30px;
+    color: var(--accent-color);
+}
+
+nav ul li {
+    padding-left: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Lexend Exa;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--main-color);
+    transition: .2s ease-in-out;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0em;
+    bottom: -0.1em;
+    width: 100%;
+    height: .08em;
+    transition: .2s ease-in-out;
+    transform: scaleX(0);
+    background-color: var(--accent-color);
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+
+
+
+/*!HERO STYLES ==========================================================================  */
+/*!HERO STYLES ==========================================================================  */
+/*!HERO STYLES ==========================================================================  */
+
+.whole {
+    width: 100%;
+    height: 3164px;
+    background-image: url(./img/bg.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 0 3em;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    
+}
+
+.hero-box {
+    width: 70%;
+    height: 50vh;
+    background: rgba(250, 247, 247, 0.40);
+    margin-left: 4em;
+    margin-right: 4em;
+    border-radius: 32px;
+
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1),
+                -10px -10px 15px rgba(255, 255, 255, 0.4);
+    padding: 1.5em;
+}
+
+.hero-img {
+    width: 35%;
+}
+
+.whole h1 {
+    color: var(--main-color);
+    font-family: Lexend Giga;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.whole p {
+    color: var(--main-color);
+    font-family: Lexend Exa;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 1em;
+}
+
+.hero-box a {
+    display: flex;
+    width: 262px;
+    height: 64px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--Acento, #C9FF36);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.10), 0px 4px 2px 0px rgba(0, 0, 0, 0.10), 0px 8px 8px 0px rgba(0, 0, 0, 0.10);
+    color: var(--Negro, #1A1A1A);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Lexend Exa;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 147.368% */
+    letter-spacing: 0.75px;
+    text-decoration: none;
+    margin-top: 1.5em;
+    transition: .2s ease-in-out;
+}
+
+.hero-box a:hover {
+    background: var(--Acento, #aad72d);
+}
+
+
+
+
+
+/*!BENIFITS ==========================================================================  */
+/*!BENIFITS ==========================================================================  */
+/*!BENIFITS ==========================================================================  */
+
+
+.ben-1 {
+    width: 50%;
+    margin-top: 4em;
+}
+
+.ben-head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ben-head i {
+    color: var(--accent-color);
+    font-size: 5em;
+}
+
+.ben-2 {
+    width: 50%;
+    margin-left: 35em;
+    margin-top: 4em;
+    text-align: right;
+}
+
+.b3 i{
+    margin-right: .5em;
+}
+
+
+/*!BUTTONS ==========================================================================  */
+/*!BUTTONS ==========================================================================  */
+/*!BUTTONS ==========================================================================  */
+
+#buttons {
+    margin-top: 8em;
+}
+
+.button {
+    width: 400px;
+    height: 459px;
+    flex-shrink: 0;
+    margin: 40px 40px 40px 40px;
+    border-radius: 32px;
+    background: rgba(250, 247, 247, 0.40);
+    box-shadow: -15px -15px 21px 0px rgba(255, 255, 255, 0.20), 10px 10px 25px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 500px;
+    position: relative;
+}
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    border-radius: 32px;
+    width: 100%;
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: 50s slide infinite linear ;
+}
+
+.button h1 {
+    color: rgba(112, 0, 255, 0.30);
+    font-family:'Lexend Giga', sans-serif;
+    font-size: 300px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    transform: rotate(-13.67deg);
+    position: absolute;
+}
+
+.button h2 {
+    color: #151515;
+    font-family: Lexend Exa;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--main-color);
+    padding-bottom: 15em;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 2.5%;
+    width: 95%;
+    height: 1px;
+  background-color: white;
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 2.5%;
+    width: 95%;
+    height: 1px;
+    background-color: white;
+}
+
+.skull {
+    position: absolute;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 9%;
+    color: #fff;
+}
+
+.skull h1 {
+    font-size: 35px;
+}
+
+.skull b {
+    color: #C9FF36;
+}
+
+.skull i {
+    margin-left: 2em;
+    font-size: 35px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.skull i:hover {
+    color: var(--sub-accent);
+}
+
+h3 {
+    color: #fff;
+    font-weight: 200;
+    padding: 5px 40px;
+}
+
+.h3 {
+    position: absolute;
+    bottom: 5%;
+}
+
+.h3 b {
+    font-weight: 200;
+    color: var(--sub-accent);
+}
+
