@@ -167,7 +167,7 @@ def gestures():
                     sio.emit("gesture", 1)
                     print('one finger is closed')
                     emit_gesture(1)
-                    webbrowser.open("https://web.whatsapp.com/")
+                    webbrowser.open("http://localhost:5000/static/main/timetable.pdf")
                     # Send data to frontend that one finger is closed
             if Shree == [0, 0, 1, 1, 1]:
                 time.sleep(0.7)
